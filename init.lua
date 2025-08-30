@@ -1,8 +1,4 @@
-require("custom.config.keymaps")
-require("custom.config.options")
-require("custom.config.autocmds")
-require("custom.config.cmds")
-require("custom.config.gui")
+require("custom.config")
 
 -- [[ Basic Autocommands ]]
 -- [[ Install `lazy.nvim` plugin manager ]]

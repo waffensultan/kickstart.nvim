@@ -13,6 +13,9 @@ vim.keymap.set('n', '<leader>bb', '<cmd>Telescope buffers<cr>', { desc = 'Find b
 -- Neotree
 vim.keymap.set('n', '<leader>e', '<cmd>Neotree toggle<CR>')
 
+-- Oil
+vim.keymap.set('n', '-', '<cmd>Oil --float<CR>', { desc = "Open oil" })
+
 -- Toggleterm
 vim.keymap.set('n', '<leader>tt', "<cmd>ToggleTerm<CR>", { desc = "Toggle terminal" })
 vim.keymap.set("n", "<leader>t1", "<cmd>1ToggleTerm<CR>", { desc = "Terminal 1" })

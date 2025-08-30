@@ -1,3 +1,6 @@
+-- Set current file as working directory
+vim.opt.autochdir = true
+
 -- Line numbers
 vim.opt.number = true
 vim.opt.relativenumber = true
