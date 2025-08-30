@@ -6,7 +6,7 @@ return {
 		"MunifTanjim/nui.nvim",
 		"nvim-tree/nvim-web-devicons", -- optional, but recommended
 	},
-	lazy = false,                    -- neo-tree will lazily load itself
+	lazy = false,                -- neo-tree will lazily load itself
 	config = function()
 		require("neo-tree").setup {
 			window = {
@@ -17,6 +17,15 @@ return {
 					hide_dotfiles = false,
 					hide_gitignored = true,
 				},
+				follow_current_file = {
+					enabled = true,
+					leave_dirs_open = false
+				},
+				bind_to_cwd = true,
+				cwd_target = {
+					sidebar = "tab",
+					current = "window"
+				}
 			},
 			default_component_configs = {
 				icon = {

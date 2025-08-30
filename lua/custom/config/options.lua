@@ -1,5 +1,5 @@
--- Set current file as working directory
-vim.opt.autochdir = true
+-- For best auto-session.nvim experience
+vim.o.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
 
 -- Line numbers
 vim.opt.number = true

@@ -1,7 +1,5 @@
 require("custom.config")
 
--- [[ Basic Autocommands ]]
--- [[ Install `lazy.nvim` plugin manager ]]
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
 	local lazyrepo = 'https://github.com/folke/lazy.nvim.git'
@@ -15,7 +13,6 @@ end
 local rtp = vim.opt.rtp
 rtp:prepend(lazypath)
 
--- [[ Configure and install plugins ]]
 require('lazy').setup({
 	'NMAC427/guess-indent.nvim', -- Detect tabstop and shiftwidth automatically
 
