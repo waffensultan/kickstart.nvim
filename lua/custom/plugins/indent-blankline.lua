@@ -5,5 +5,8 @@ return {
         indent = {
             char = '▏',
         },
+        scope = {
+            show_start = false
+        }
     },
 }

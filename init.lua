@@ -107,6 +107,15 @@ require('lazy').setup({
         },
         config = function()
             require('telescope').setup {
+                defaults = {
+                    theme = "center",
+                    sorting_strategy = "ascending",
+                    layout_config = {
+                        horizontal = {
+                            prompt_position = "top"
+                        }
+                    }
+                },
                 pickers = {
                     buffers = {
                         mappings = {
@@ -141,6 +150,10 @@ require('lazy').setup({
             vim.keymap.set('n', '<leader>sd', builtin.diagnostics, { desc = '[S]earch [D]iagnostics' })
             vim.keymap.set('n', '<leader>sr', builtin.resume, { desc = '[S]earch [R]esume' })
             vim.keymap.set('n', '<leader>s.', builtin.oldfiles, { desc = '[S]earch Recent Files ("." for repeat)' })
+
+            -- Telescope Project
+            vim.keymap.set("n", "<leader>sp", function() require("telescope").extensions.project.project {} end,
+                { desc = "[S]elect [P]roject", silent = true })
 
             -- Slightly advanced example of overriding default behavior and theme
             vim.keymap.set('n', '<leader>/', function()
@@ -474,28 +487,6 @@ require('lazy').setup({
             -- Shows a signature help window while you type arguments for a function
             signature = { enabled = true },
         },
-    },
-
-    { -- You can easily change to a different colorscheme.
-        -- Change the name of the colorscheme plugin below, and then
-        -- change the command in the config to whatever the name of that colorscheme is.
-        --
-        -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
-        'folke/tokyonight.nvim',
-        priority = 1000, -- Make sure to load this before all the other start plugins.
-        config = function()
-            ---@diagnostic disable-next-line: missing-fields
-            require('tokyonight').setup {
-                styles = {
-                    comments = { italic = false }, -- Disable italics in comments
-                },
-            }
-
-            -- Load the colorscheme here.
-            -- Like many other themes, this one has different styles, and you could load
-            -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-            vim.cmd.colorscheme 'tokyonight-night'
-        end,
     },
 
     -- Highlight todo, notes, etc in comments
