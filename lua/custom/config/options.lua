@@ -16,6 +16,7 @@ vim.opt["shiftwidth"] = 4
 vim.o.cursorline = true
 vim.o.scrolloff = 30
 vim.o.list = true
+vim.opt.expandtab = true
 
 -- Clipboard & mouse
 vim.o.mouse = 'a'
