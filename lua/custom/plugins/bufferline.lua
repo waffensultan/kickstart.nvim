@@ -5,6 +5,7 @@ return {
     config = function()
         require("bufferline").setup({
             options = {
+                numbers = "ordinal",
                 style_preset = {
                     require('bufferline').style_preset.no_italic
                 },
