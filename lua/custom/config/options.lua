@@ -21,7 +21,7 @@ vim.opt.expandtab = true
 -- Clipboard & mouse
 vim.o.mouse = 'a'
 vim.schedule(function()
-	vim.o.clipboard = 'unnamedplus'
+    vim.o.clipboard = 'unnamedplus'
 end)
 
 -- Search

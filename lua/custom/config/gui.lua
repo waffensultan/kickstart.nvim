@@ -1,6 +1,9 @@
 vim.opt.termguicolors = true
 vim.o.guifont = "Maple Mono NF:h12"
 
+-- Disable word wrap
+vim.opt.wrap = false
+
 -- Nerd Font setting
 vim.g.have_nerd_font = true
 
