@@ -16,8 +16,6 @@ return {
                 use_libuv_file_watcher = true,
                 filtered_items = {
                     visible = true,
-                    hide_dotfiles = false,
-                    hide_gitignored = true,
                 },
                 follow_current_file = {
                     enabled = true,

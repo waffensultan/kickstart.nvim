@@ -62,7 +62,7 @@ return {
         dashboard.section.footer.val = {
             "",
             "󰚥 Plugins loaded: " .. lazy_stats.loaded .. " / " .. lazy_stats.count,
-            "󱎫 Lazy loading time: " .. math.floor(lazy_stats.startuptime * 100 + 5) / 100 .. "ms",
+            "󱎫 Loading time: " .. math.floor(lazy_stats.startuptime * 100 + 5) / 100 .. "ms",
         }
 
         local config = {
