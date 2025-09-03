@@ -9,7 +9,7 @@ return {
                 style_preset = {
                     require('bufferline').style_preset.no_italic
                 },
-                always_show_bufferline = false,
+                -- always_show_bufferline = false,
                 offsets = {
                     {
                         filetype = "neo-tree",
