@@ -1,5 +1,8 @@
 vim.opt.termguicolors = true
-vim.o.guifont = "Maple Mono NF:h13"
+vim.o.guifont = "Maple Mono NF:h12"
+
+-- Disable line highlight
+vim.o.cursorline = false
 
 -- Disable word wrap
 vim.opt.wrap = false

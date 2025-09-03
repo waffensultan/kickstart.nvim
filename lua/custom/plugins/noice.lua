@@ -12,6 +12,7 @@ return {
     config = function()
         require("noice").setup({
             presets = {
+                lsp_doc_border = true,
                 command_palette = {
                     views = {
                         cmdline_popup = {

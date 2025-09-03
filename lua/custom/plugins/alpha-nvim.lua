@@ -51,20 +51,18 @@ return {
         -- Dynamic buttons that call telescope functions directly
         dashboard.section.buttons.val = {
             dashboard.button("e", "󰈔  New file", "<cmd>ene<CR>"),
-            dashboard.button("f", "󰈞  Find file", telescope_builtin("find_files")),
-            dashboard.button("h", "󰋚  Recently opened files", telescope_builtin("oldfiles")),
-            dashboard.button("m", "󰃀  Jump to bookmarks", telescope_builtin("marks")),
+            dashboard.button("h", "󰋚  Recent files", telescope_builtin("oldfiles")),
             dashboard.button("p", "󰉋  Projects", telescope_extension("project", "project")),
-            dashboard.button("s", "󰁯  Find session", ":AutoSession search<CR>"),
-            dashboard.button("c", "󰒓  Configuration", "<cmd>edit $MYVIMRC<CR>"),
-            dashboard.button("q", "󰗼  Quit", "<cmd>qa<CR>"),
+            dashboard.button("s", "󰁯  Restore Session", ":AutoSession search<CR>"),
+            dashboard.button("c", "󰒓  Config", "<cmd>edit $MYVIMRC<CR>"),
+            dashboard.button("q", "  Quit", "<cmd>qa<CR>"),
         }
 
         local lazy_stats = require("lazy").stats()
         dashboard.section.footer.val = {
             "",
             "󰚥 Plugins loaded: " .. lazy_stats.loaded .. " / " .. lazy_stats.count,
-            "󱎫 Lazy loading time: " .. math.floor(lazy_stats.startuptime * 100) / 100 .. "ms",
+            "󱎫 Lazy loading time: " .. math.floor(lazy_stats.startuptime * 100 + 5) / 100 .. "ms",
         }
 
         local config = {
