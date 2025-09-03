@@ -6,6 +6,7 @@ return {
         require("catppuccin").setup({
             no_italic = true,
             auto_integrations = true,
+            term_colors = true,
             color_overrides = {
                 mocha = {
                     base = "#090b10",
