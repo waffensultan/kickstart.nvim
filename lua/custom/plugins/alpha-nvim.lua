@@ -53,7 +53,7 @@ return {
             dashboard.button("e", "󰈔  New file", "<cmd>ene<CR>"),
             dashboard.button("h", "  Recent files", telescope_builtin("oldfiles")),
             dashboard.button("p", "󰉋  Projects", telescope_extension("project", "project")),
-            dashboard.button("s", "󰦛  Restore Session", ":AutoSession search<CR>"),
+            dashboard.button("s", "󰦛  Restore session", ":AutoSession search<CR>"),
             dashboard.button("c", "󰒓  Config", "<cmd>edit $MYVIMRC<CR>"),
             dashboard.button("q", "  Quit", "<cmd>qa<CR>"),
         }
