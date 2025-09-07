@@ -5,8 +5,8 @@ vim.g.maplocalleader = ' '
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
 -- Bufferline
-vim.keymap.set('n', ']b', ':BufferLineCycleNext<CR>', { desc = 'Next [B]uffer' })
-vim.keymap.set('n', '[b', ':BufferLineCyclePrev<CR>', { desc = 'Previous [B]uffer' })
+vim.keymap.set('n', ']b', ':bnext<CR>', { desc = 'Next [B]uffer' })
+vim.keymap.set('n', '[b', ':bprev<CR>', { desc = 'Previous [B]uffer' })
 vim.keymap.set('n', '<leader>x', ':Bdelete<CR>', { desc = 'Close [B]uffer' })
 vim.keymap.set('n', '<leader>bb', '<cmd>Telescope buffers<cr>', { desc = 'Find [B]uffers' })
 
