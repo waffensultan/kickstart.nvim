@@ -16,7 +16,9 @@ rtp:prepend(lazypath)
 require('lazy').setup({
     'NMAC427/guess-indent.nvim', -- Detect tabstop and shiftwidth automatically
 
-    {                            -- Adds git related signs to the gutter, as well as utilities for managing changes
+    { "nvim-tree/nvim-web-devicons", opts = {} },
+
+    { -- Adds git related signs to the gutter, as well as utilities for managing changes
         'lewis6991/gitsigns.nvim',
         opts = {
             signs = {
@@ -111,6 +113,14 @@ require('lazy').setup({
                         horizontal = {
                             prompt_position = "top"
                         }
+                    },
+                    mappings = {
+                        i = {
+                            ['<c-p>'] = require('telescope.actions.layout').toggle_preview
+                        }
+                    },
+                    preview = {
+                        hide_on_startup = true
                     }
                 },
                 pickers = {
@@ -487,7 +497,7 @@ require('lazy').setup({
     },
 
     -- Highlight todo, notes, etc in comments
-    { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
+    { 'folke/todo-comments.nvim',    event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
 
     { -- Collection of various small independent plugins/modules
         'echasnovski/mini.nvim',
