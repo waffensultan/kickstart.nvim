@@ -1,6 +1,5 @@
 vim.opt.termguicolors = true
--- vim.o.guifont = "Maple Mono NF:h12"
-vim.o.guifont = "ComicShannsMono Nerd Font:h13"
+vim.o.guifont = "Maple Mono NF:h12"
 
 -- Disable line highlight
 vim.o.cursorline = false
