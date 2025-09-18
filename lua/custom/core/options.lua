@@ -11,8 +11,8 @@ vim.o.showmode = false
 vim.o.signcolumn = 'yes'
 
 -- Indentation
-vim.opt["tabstop"] = 4
-vim.opt["shiftwidth"] = 4
+vim.opt["tabstop"] = 2
+vim.opt["shiftwidth"] = 2
 vim.o.cursorline = true
 vim.o.scrolloff = 30
 vim.o.list = true
