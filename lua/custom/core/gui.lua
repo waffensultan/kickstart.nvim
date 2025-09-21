@@ -12,6 +12,6 @@ vim.g.have_nerd_font = true
 
 -- Neovide specific
 if vim.g.neovide then
-    vim.g.neovide_title_background_color = "#090b10"
-    vim.g.neovide_refresh_rate = 60
+  vim.g.neovide_title_background_color = "#090b10"
+  vim.g.neovide_refresh_rate = 60
 end
