@@ -1,4 +1,3 @@
--- Includes
 -- autocmds.lua
 -- gui.lua
 -- keymaps.lua
