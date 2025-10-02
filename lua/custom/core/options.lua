@@ -21,7 +21,7 @@ vim.opt.expandtab = true
 -- Clipboard & mouse
 vim.o.mouse = "a"
 vim.schedule(function()
-    vim.o.clipboard = "unnamedplus"
+  vim.o.clipboard = "unnamedplus"
 end)
 
 -- Search
@@ -43,6 +43,7 @@ vim.o.timeoutlen = 300
 -- Other
 vim.o.inccommand = "split"
 vim.o.confirm = true
+vim.opt.laststatus = 3
 
 -- Shell
 vim.opt.shell = "pwsh.exe"
